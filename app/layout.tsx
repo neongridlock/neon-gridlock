@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { DM_Sans, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
@@ -34,6 +35,12 @@ export default function RootLayout({
       <head>
       </head>
       <body className={`${dmSans.variable} ${jakartaSans.variable} ${jetbrainsMono.variable} font-sans bg-black text-white overflow-hidden`}>
+        <Script
+  src="https://quge5.com/88/tag.min.js"
+  data-zone="251941"
+  data-cfasync="false"
+  strategy="afterInteractive"
+/>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
